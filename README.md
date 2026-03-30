@@ -13,7 +13,7 @@ GitHub: glika23-code
 Alesia Beqaj - GitHub: Alesiabeqaj-hub - Email: abeqaj23@epoka.edu.al
 Erla Ruci- GitHub: eruci23-124 - Email: eruci23@epoka.edu.al
 Arjeta Caushollaj- GitHub: acaushollaj23-sketch - Email: acaushollaj23@epoka.edu.al
-Klevis Tobli GitHub: [Username] - Email:ktobli23@epoka.edu.al
+Klevis Tobli GitHub: Klevis05 - Email:ktobli23@epoka.edu.al
 
 
 
