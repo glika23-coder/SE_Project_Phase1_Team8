@@ -1,0 +1,177 @@
+Phase II: User Requirements and Application Specifications
+
+#1. Chosen Development Model
+Agile Development Model
+Justification:
+The Agile model was selected because it allows flexibility and continuous improvement throughout the development process. Since the Smart Parking Navigator project may evolve based on testing and user feedback, Agile enables the team to adapt quickly. It also supports teamwork through regular updates, short development cycles (sprints), and ongoing testing, making it ideal for this type of application.
+
+#2. User Requirements 
+As a driver, I want to search for parking near my location so that I can save time.
+As a user, I want to view parking spaces on a map so that I can easily choose the closest one.
+As a driver, I want to enter a specific location so that I can find parking in another area.
+As a user, I want the interface to be simple so that I can use it without confusion.
+As a user, I want real-time parking availability so that I can rely on accurate data.
+As a driver, I want to see details about each parking space so that I can decide where to park.
+As a user, I want the system to load quickly so that I don’t waste time waiting.
+As a user, I want to use the app on my phone so that I can access it while driving.
+As a user, I want error messages when something goes wrong so that I understand what to do.
+As a user, I want my location detected automatically so that I don’t need to type it manually.
+
+#3. Functional Requirements 
+a. Description 
+The system should allow users to search parking by location.
+The system should display parking spaces on a map.
+The system should allow users to enter a custom location.
+The system should detect the user’s current location.
+The system should show availability status of parking spaces.
+The system should update parking availability in real-time.
+The system should display parking details (location, status).
+The system should allow map zoom in/out.
+The system should allow users to refresh search results.
+The system should handle invalid input.
+The system should show error messages when needed.
+The system should support mobile and desktop access.
+The system should allow navigation between pages.
+The system should integrate with a map API.
+The system should process user requests quickly.
+The system should store parking data in the database.
+The system should retrieve parking data efficiently.
+The system should ensure correct data display.
+The system should support multiple users at once.
+The system should log system activity (optional).
+The system should allow filtering (e.g., nearest parking).
+The system should highlight available vs unavailable spaces.
+
+b. Acceptance Criteria 
+1. Location-Based Search
+User enters location
+System processes input
+Nearby parking is displayed
+
+2. Map Display
+Parking appears on map
+Markers are visible
+Map is interactive (zoom, move)
+
+3. Real-Time Availability
+Parking status updates correctly
+Changes are reflected after refresh
+
+4. User Input Validation
+Accepts valid input
+Rejects invalid input
+Displays error message
+
+5. Location Detection
+System requests location permission
+Detects user location
+Displays nearby parking automatically
+
+#4. Non-Functional Requirements 
+a. Description 
+
+Performance
+The system should load quickly
+The system should respond to requests fast
+The system should handle multiple users simultaneously
+
+Usability
+ 4. The interface should be simple
+ 5. Navigation should be intuitive
+ 6. Users should complete tasks easily
+
+Reliability
+ 7. The system should run without crashes
+ 8. The system should recover from errors
+ 9. The system should maintain consistent performance
+
+Scalability
+ 10. The system should handle increased users
+ 11. The system should support future expansion
+
+Security
+ 12. The system should protect user data
+ 13. The system should validate inputs
+ 14. The system should prevent unauthorized access
+
+Compatibility
+ 15. The system should work on different browsers
+ 16. The system should work on mobile devices
+
+Maintainability
+ 17. The code should be easy to update
+ 18. The system should allow debugging
+
+Availability
+ 19. The system should be available most of the time
+ 20. Downtime should be minimal
+
+Accessibility
+ 21. The system should be usable by different users
+ 22. The interface should be readable and clear
+
+b. Acceptance Criteria 
+
+1. Speed
+Pages load in < 2 seconds
+Search results appear in < 3 seconds
+
+2. Usability
+User completes search in ≤ 3 steps
+Interface is clear and understandable
+
+3. Reliability
+No crashes during normal usage
+Errors handled with messages
+
+4. Compatibility
+Works on Chrome, Edge, Safari
+Works on mobile and desktop
+
+5. Security
+Inputs are validated
+No unauthorized data access
+
+#5. Application Specifications
+a. Architecture
+The system follows a three-tier architecture:
+Frontend (User Interface): Handles user interaction and displays the map and parking data
+Backend (Server): Processes requests, handles business logic, and communicates with the database
+Database: Stores parking data and user-related information
+The frontend sends requests to the backend, which processes the data and retrieves relevant information from the database before returning results to the user.
+
+b. Database Model
+The database includes the following main tables:
+Users (user_id, email, password)
+ParkingSpaces (parking_id, location, availability_status)
+Locations (location_id, name, coordinates)
+Relationships:
+Each parking space is linked to a location
+Each user can perform multiple searches
+Constraints:
+User email must be unique
+Parking spaces must have valid location references
+
+c. Technologies Used
+Frontend: HTML, CSS, JavaScript
+Chosen for creating a responsive and interactive interface
+Backend: Python 
+Chosen for handling logic and scalability
+Database: MySQL
+Efficient for structured data storage
+Map Integration: Google Maps API (or similar)
+Used to display parking locations visually
+
+d. User Interface Design
+The application includes:
+A home/search page where users enter a location
+A map interface displaying nearby parking spaces
+Clear markers showing available parking spots
+The design is simple, clean, and user-friendly, with easy navigation and minimal steps required to perform a search.
+
+e. Security Measures
+User authentication for secure access 
+Passwords are encrypted before storage
+Input validation to prevent invalid or harmful data
+Secure communication between frontend and backend
+
