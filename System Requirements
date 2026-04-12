@@ -3,7 +3,9 @@ Phase II: User Requirements and Application Specifications
 #1. Chosen Development Model
 Agile Development Model
 Justification:
-The Agile model was selected because it allows flexibility and continuous improvement throughout the development process. Since the Smart Parking Navigator project may evolve based on testing and user feedback, Agile enables the team to adapt quickly. It also supports teamwork through regular updates, short development cycles (sprints), and ongoing testing, making it ideal for this type of application.
+The Agile model was selected because it allows flexibility and continuous improvement throughout the development process. 
+Since the Smart Parking Navigator project may evolve based on testing and user feedback, Agile enables the team to adapt quickly. 
+It also supports teamwork through regular updates, short development cycles (sprints), and ongoing testing, making it ideal for this type of application.
 
 #2. User Requirements 
 As a driver, I want to search for parking near my location so that I can save time.
